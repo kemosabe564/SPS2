@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <EditText
+            android:id="@+id/cell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="enter the cell number"
+            android:inputType="textPersonName"
+            tools:layout_conversion_absoluteHeight="45dp"
+            tools:layout_conversion_absoluteWidth="483dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="425dp" />
+
+        <EditText
+            android:id="@+id/experimentNo"
+            android:layout_width="302dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="experiment No"
+            android:inputType="textPersonName"
+            tools:layout_conversion_absoluteHeight="45dp"
+            tools:layout_conversion_absoluteWidth="483dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="470dp" />
+
+        <TextView
+            android:id="@+id/wifi_info"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:baselineAligned="false"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical"
+            android:text="wifi info and training set overview: "
+            tools:layout_conversion_absoluteHeight="69dp"
+            tools:layout_conversion_absoluteWidth="214dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/bt_start"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="collecting data(stop automatically)"
+            tools:layout_conversion_absoluteHeight="81dp"
+            tools:layout_conversion_absoluteWidth="108dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="296dp" />
+
+        <Button
+            android:id="@+id/bt_stop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="stop collecting"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_conversion_absoluteWidth="217dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="377dp" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/acc_feature"-->
+<!--            android:layout_width="232dp"-->
+<!--            android:layout_height="36dp"-->
+<!--            android:text="NOT DONE yet"-->
+<!--            tools:layout_conversion_absoluteHeight="47dp"-->
+<!--            tools:layout_conversion_absoluteWidth="483dp"-->
+<!--            tools:layout_editor_absoluteX="0dp"-->
+<!--            tools:layout_editor_absoluteY="249dp" />-->
+
+        <Button
+            android:id="@+id/bt_map_create"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:text="create radio map" />
+
+        <Button
+            android:id="@+id/bt_test_reset"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="reset test counter" />
+
+        <Button
+            android:id="@+id/bt_map_update"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:text="update radio map" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/wifi_feature"-->
+<!--            android:layout_width="231dp"-->
+<!--            android:layout_height="31dp"-->
+<!--            android:text="wifi feature"-->
+<!--            tools:layout_conversion_absoluteHeight="74dp"-->
+<!--            tools:layout_conversion_absoluteWidth="483dp"-->
+<!--            tools:layout_editor_absoluteX="0dp"-->
+<!--            tools:layout_editor_absoluteY="175dp" />-->
+
+
+<!--        <EditText-->
+<!--            android:id="@+id/movement"-->
+<!--            android:layout_width="302dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:ems="10"-->
+<!--            android:hint="movement"-->
+<!--            android:inputType="textPersonName"-->
+<!--            tools:layout_conversion_absoluteHeight="45dp"-->
+<!--            tools:layout_conversion_absoluteWidth="483dp"-->
+<!--            tools:layout_editor_absoluteX="0dp"-->
+<!--            tools:layout_editor_absoluteY="470dp" />-->
+        <EditText
+            android:id="@+id/testcell"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="test: enter the cell number"
+            android:inputType="textPersonName"
+            tools:layout_conversion_absoluteHeight="45dp"
+            tools:layout_conversion_absoluteWidth="483dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="425dp" />
+
+<!--        <EditText-->
+<!--            android:id="@+id/testexperimentNo"-->
+<!--            android:layout_width="290dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:ems="10"-->
+<!--            android:hint="test: experiment No"-->
+<!--            android:inputType="textPersonName"-->
+<!--            tools:layout_conversion_absoluteHeight="45dp"-->
+<!--            tools:layout_conversion_absoluteWidth="483dp"-->
+<!--            tools:layout_editor_absoluteX="0dp"-->
+<!--            tools:layout_editor_absoluteY="470dp" />-->
+        <Button
+            android:id="@+id/bt_testing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="where am I"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_conversion_absoluteWidth="156dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="515dp" />
+
+        <TextView
+            android:id="@+id/testing_overview"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical"
+            android:text="testing overview: " />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="195dp"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical"
+            android:text="where am I" />
+</LinearLayout>
