@@ -1,7 +1,6 @@
 package com.example.sps_2;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
