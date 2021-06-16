@@ -1,7 +1,7 @@
 dataPath = 'map\';        % 路径
 dataDir = dir([dataPath '*.txt']); 
 AP = [];
-AP_MAX = 12;
+AP_MAX = 11;
 Cell_MAX = 8;
 j=3;
 RSS=[];
@@ -81,8 +81,8 @@ for i = 1:length(dataDir)
 %        end
 %     end
 end
-figure
-bar(onerow);
+% figure
+% bar(onerow);
 % AP=[AP;RSS];
 % store(AP);
 % 
