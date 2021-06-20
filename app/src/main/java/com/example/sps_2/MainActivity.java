@@ -38,7 +38,7 @@ import biz.source_code.dsp.transform.Dft;
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener,View.OnClickListener {
     // true for parallel
-    public static final boolean MODE = false;
+    public static final boolean MODE = true;
     public static boolean TERMINATED = false;
     public static boolean GAUSSION_FIT = true;
     public static boolean STOP = false;
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     int AP = 11;
     int CellNO = 8;
     int Train_MAX = 100;
-    int Test_MAX = 20;
+    int Test_MAX = 40;
     int test_count;
 
 
@@ -622,12 +622,17 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             testScanAP[j].APindex = j+1;
 
         }
-        if (test_count >= 10 || error <= 1E-4){
-            if (max >= 0.85){
-                result.append("maximum scan reached" + "\n");
+        if (test_count >= 50 || error <= 1E-4){
+            if(max == 0){
+                result.append("unable to locate" + "\n");
             }
-            else if(test_count >= 10){
-                result.append("The probability of one cell is high enough" + "\n");
+            else{
+                if (max >= 0.85){
+                    result.append("maximum scan reached" + "\n");
+                }
+                else if(test_count >= 50){
+                    result.append("The probability of one cell is high enough" + "\n");
+                }
             }
 //
             TERMINATED = true;
@@ -643,6 +648,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             result.append("newprior: 1: " + newPrior[0] + ", 2: " + newPrior[1] + ", 3: " + newPrior[2] + ", 4: " + newPrior[3] + ", 5: " + newPrior[4] + ", 6: " + newPrior[5] + ", 7: " + newPrior[6] + ", 8: " + newPrior[7] + " " + "\n");
             result.append("cell: " + (number+1) + ", P = " +  max + "\n");
             Log.i(TAG, "------------------one test ended-----------------");
+            mSensorMgr.unregisterListener(this);
+
         }
 
 
@@ -858,6 +865,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         // TODO:
         if(v.getId()==R.id.bt_test_reset)
         {
+            mSensorMgr.unregisterListener(this);
             for (int i = 0; i < AP; i++){
                 BF[i].count = 0;
             }
