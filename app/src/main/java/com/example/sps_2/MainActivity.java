@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     public String Rawdata;
     int index;
     // result
-    int AP = 12;
+    int AP = 11;
     int CellNO = 8;
     int Train_MAX = 100;
     int Test_MAX = 20;
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     }
 
 
-    String w1 = "star_platinum", w2 = "Heaven's_Door";
+//    String w1 = "star_platinum", w2 = "Heaven's_Door";
 
     // TODO:
     // 1. adding a array of AP, OK
@@ -170,17 +170,45 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
 
         // TODO: 清理不用的变量
-        // adding our own APs
-        // "SKY"
+//        // adding our own APs
+//        // "SKY"
+//        Wifi_list[0] = "26:c6:3b:61:cc:89";
+//        // HONOR
+//        Wifi_list[1] = "02:5e:20:b2:48:73";
+//        // ""
+//        Wifi_list[2] = "04:18:d6:22:98:8c";
+//        // ""
+//        Wifi_list[3] = "06:18:d6:21:51:49";
+//        // "LYD"
+//        Wifi_list[4] = "5e:87:9c:21:4c:d3";
+////        Wifi_list[5] = "0e:ec:da:ad:f8:29";
+//        //
+//        Wifi_list[5] = "16:18:d6:21:51:49";
+////        Wifi_list[7] = "16:18:d6:21:98:87";
+//        Wifi_list[6] = "16:18:d6:21:98:8c";
+//        Wifi_list[7] = "06:18:d6:21:98:8c";
+//        //
+//        Wifi_list[8] = "06:18:d6:22:a4:70";
+//        Wifi_list[9] = "06:18:d6:22:98:8c";
+//        // no
+//        Wifi_list[10] = "fc:ec:da:ad:f8:29";
+//        //
+//        Wifi_list[11] = "04:18:d6:e2:65:8b";
+//
+
+//        // "SKY"
         Wifi_list[0] = "26:c6:3b:61:cc:89";
+//        Wifi_list[0] = "04:18:d6:22:51:49";
+        //"P10"
+        Wifi_list[1] = "78:62:56:2c:f8:e7";
         // HONOR
-        Wifi_list[1] = "02:5e:20:b2:48:73";
+        Wifi_list[2] = "12:35:10:ce:3c:e2";
         // ""
-        Wifi_list[2] = "04:18:d6:22:98:8c";
+//        Wifi_list[2] = "04:18:d6:22:98:8c";
         // ""
         Wifi_list[3] = "06:18:d6:21:51:49";
-        // "LYD"
-        Wifi_list[4] = "5e:87:9c:21:4c:d3";
+
+        Wifi_list[4] = "c4:36:55:3c:de:49";
 //        Wifi_list[5] = "0e:ec:da:ad:f8:29";
         //
         Wifi_list[5] = "16:18:d6:21:51:49";
@@ -191,14 +219,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         Wifi_list[8] = "06:18:d6:22:a4:70";
         Wifi_list[9] = "06:18:d6:22:98:8c";
         // no
-        Wifi_list[10] = "fc:ec:da:ad:f8:29";
-        //
-        Wifi_list[11] = "04:18:d6:e2:65:8b";
-
-//        Wifi_list[12] = "";
-
-
-
+        Wifi_list[10] = "16:18:d6:22:51:49";
 
         //
         for (int i = 0; i < AP; i++)
